@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="menu">
+        <item>Events Calendar</item>
+        <item>Job Postings</item>
+        <item>Organizations</item>
+    </array>
+
+    <array name="eventsmenu">
+        <item>My Events</item>
+    </array>
+
+    <array name="jobsmenu">
+    </array>
+
+    <array name="orgmenu">
+    </array>
+</resources>

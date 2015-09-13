@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    >
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:text="POSITION NAME" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtCompany"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:textSize="20dp"
+        android:text="COMPANY NAME" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtCompany"
+        android:textSize="15dp"
+        android:text="PART-TIME" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtHours"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:layout_toRightOf="@+id/txtType"
+        android:layout_below="@+id/txtCompany"
+        android:textSize="15dp"
+        android:text="XX Hours per week" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHours"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textSize="13dp"
+        android:text="SafeTravels is a startup business that was founded by four business students from the University of South Florida. We are looking for two people who are willing to develop a mobile application that is a prerequisite for the startup launching." >
+    </TextView>
+
+</RelativeLayout><!-- From: file:/F:/AndroidStudio/USFTech/app/src/main/res/layout/jobs_list_item.xml -->

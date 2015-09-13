@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:text="NAME" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtOrg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:textSize="22dp"
+        android:text="ORG" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrg"
+        android:textSize="15dp"
+        android:text="RRRR NNNN" >
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/datetimes"
+        android:layout_below="@+id/txtLocation" >
+        <TextView
+            android:id="@+id/txtStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="EEEE, MMM DD HH:MM a" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtDash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text=" - " >
+        </TextView>
+
+        <TextView
+            android:id="@+id/txtEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:text="EEEE, MMM DD HH:MM a" >
+        </TextView>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_below="@+id/datetimes"
+        android:textSize="13dp"
+        android:text="Come meet other members of your ACM student chapter. Ask upperclassmen questions about the department and classes. Hear about our upcoming events and connect with your fellow students. Eat free food. Come for the free food, stay because it would be to awkward to leave." >
+    </TextView>
+
+</RelativeLayout><!-- From: file:/F:/AndroidStudio/USFTech/app/src/main/res/layout/events_list_item.xml -->
