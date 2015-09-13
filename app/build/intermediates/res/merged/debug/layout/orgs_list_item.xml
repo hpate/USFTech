@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content" >
+
+    <TextView
+        android:id="@+id/txtOrgShort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="25dp"
+        android:text="ACRONYM" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtOrgLong"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/txtOrgShort"
+        android:textSize="20dp"
+        android:text="Long Organization Name" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtMeetings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtOrgLong"
+        android:textSize="17dp"
+        android:text="Mondays at 5pm, in ENB 313" >
+    </TextView>
+
+    <TextView
+        android:id="@+id/txtDesc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtMeetings"
+        android:textSize="13dp"
+        android:text="The IEEE Computer Society is the computing professional's single, unmatched source for technology information, inspiration and collaboration. By making the most up-to-date and advanced information in the computing world easily accessible, we are the source that computing professionals trust to provide high quality, state-of-the-art information on an on-demand basis. At USF, we are a 100+ member organization actively growing from more than a couple of decades and serving all computer science and engineering majors - both undergraduate and graduate. Our goal is to support students in their academic and professional endeavors." >
+    </TextView>
+
+</RelativeLayout><!-- From: file:/F:/AndroidStudio/USFTech/app/src/main/res/layout/orgs_list_item.xml -->

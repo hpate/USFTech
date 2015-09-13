@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"    >
+
+    <TextView
+        android:id="@+id/txtPrompt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:text="There is a new version of USFTech avaliable. Would you like to update?" />
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrompt"
+        android:text="Yes" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtPrompt"
+        android:layout_toRightOf="@+id/btnUpdate"
+        android:layout_marginLeft="50dp"
+        android:text="No" />
+
+</RelativeLayout><!-- From: file:/F:/AndroidStudio/USFTech/app/src/main/res/layout/dialog_update.xml -->
