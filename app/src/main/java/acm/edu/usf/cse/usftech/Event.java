@@ -19,6 +19,20 @@ public class Event {
     private URI mURI;
     private ArrayList<String> mOrgs;
 
+    public Event()
+    {
+        SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yyyy hh:mm a");
+
+        try {
+            mName = "blank";
+            mStart = formatter.parse("01/01/1000 12:00 AM");
+            mEnd = formatter.parse("01/01/1000 1:00 AM");
+            mLocation = "blank";
+            mDescription = "blank";
+        }
+        catch (Exception ex) { }
+    }
+
     public Event(Node n)
     {
         NodeList attributes = n.getChildNodes();
@@ -90,4 +104,57 @@ public class Event {
         return mDescription;
     }
 
+    public boolean before(Date d) {
+        if (this.mStart.before(d)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean after(Date d) {
+        if (this.mStart.after(d)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean sameTimeAs(Date d) {
+        if (this.mStart.equals(d)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean before(Event e) {
+        if (this.mStart.before(e.mStart)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean after(Event e) {
+        if (this.mStart.after(e.mStart)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    public boolean sameTimeAs(Event e) {
+        if (this.mStart.equals(e.mStart)) {
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
 }
